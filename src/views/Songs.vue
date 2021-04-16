@@ -168,6 +168,9 @@ html {
   width: 500px;
   transition: transform 0.3s, filter 1.5s ease-in-out;
   overflow: hidden;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
 }
 .about .about-content .left img:hover {
   transform: scale(1.05);
@@ -188,6 +191,9 @@ html {
   font-size: 15px;
   transition: all 0.2s ease-in;
   cursor: pointer;
+  animation-name: fade-in;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
 }
 .about .about-content .right .slot span {
   color: #db2929;
@@ -204,6 +210,16 @@ footer {
 footer a {
   text-decoration: none;
   color: #db2929;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(3%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @media (max-width: 1035px){
   .about .about-content .left img{

@@ -130,6 +130,9 @@ export default {
   border-radius: 5px;
   margin: 10px;
   transition: ease-in-out all 0.15s;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
 }
 .showFeedback .lists .list:hover {
   transform: scale(1.05);
@@ -179,13 +182,23 @@ export default {
 .isEdit button{
     width: 100%;
     height: 100%;
-    border: 2px solid #610e0e;
-    background: #610e0e;
-    color: white;
+    border: 2px solid #acacac;
+    background: #acacac;
+    color: rgb(104, 104, 104);
     font-size: 17px;
     font-weight: 400;
     border-radius: 6px;
     transition: 0.3s all ease;
     cursor: pointer;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(3%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>
