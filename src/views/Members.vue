@@ -11,7 +11,6 @@
             @click="selected(member.id)"
           >
             <img :src="member.thumbnail" alt="" :class="member.clicked ? 'clicked-img' : ''"/>
-            <!-- :class= "member.clicked ? 'clicked-img' : ''" -->
           </div>
           <div class="column right">
             <div class="pic">

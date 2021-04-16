@@ -205,4 +205,10 @@ footer a {
   text-decoration: none;
   color: #db2929;
 }
+@media (max-width: 1035px){
+  .about .about-content .left img{
+    height: 500px;
+    width: 300px;
+  }
+}
 </style>

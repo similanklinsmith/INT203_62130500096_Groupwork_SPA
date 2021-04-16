@@ -136,4 +136,18 @@ footer a{
     text-decoration: none;
     color: #db2929;
 }
+@media (max-width: 1035px){
+     .home-content .album img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 947px){
+    .home-content .album img{
+        display:none;
+    }
+    .home-content .text-1{
+        position: absolute;
+    }
+}
 </style>

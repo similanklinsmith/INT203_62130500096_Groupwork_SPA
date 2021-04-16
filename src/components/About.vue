@@ -98,6 +98,14 @@ section{
 .about .about-content .right p{
     text-align: justify;
 }
-
+@media (max-width: 1035px){
+    .about .about-content .left{
+        width: 100%;
+    }
+    .about .about-content .right{
+        padding-top: 20px;
+        width: 100%;
+    }
+}
 
 </style>
