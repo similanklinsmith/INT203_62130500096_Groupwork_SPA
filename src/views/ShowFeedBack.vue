@@ -5,7 +5,7 @@
       <div class="list" v-for="result in feedbackResults" :key="result.id" @click="editSurvey(result.id)">
         <div class="content">
           <h4>
-            <i class="fas fa-edit" @click="isEdit = true"></i
+            <i class="fas fa-edit" @click="editSurvey(result.id)"></i
             >{{ result.subject }}
             <span @click="deleteFeedback(result.id)">&times;</span>
           </h4>
@@ -33,6 +33,12 @@
       </div>
     </div>
   </div>
+   <footer>
+    <span
+      >Created By <a href="#">Talay</a> |
+      <span class="fa fa-copyright"> </span> 2020 All rights reserved.</span
+    >
+  </footer>
 </template>
 
 <script>
@@ -182,14 +188,26 @@ export default {
 .isEdit button{
     width: 100%;
     height: 100%;
-    border: 2px solid #acacac;
+    border: 0px;
     background: #acacac;
-    color: rgb(104, 104, 104);
+    color: white;
     font-size: 17px;
     font-weight: 400;
     border-radius: 6px;
     transition: 0.3s all ease;
     cursor: pointer;
+}
+.isEdit button:hover{
+   background: #585858;
+}
+footer {
+  background: #181818;
+  color: white;
+  padding: 2px 0;
+}
+footer a {
+  text-decoration: none;
+  color: #db2929;
 }
 @keyframes fade-in {
   from {
